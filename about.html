@@ -1,147 +1,255 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+    <title>About - Kampung Wisata Batik Kauman Solo</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fontsource-poppins@4.8.7/css/all.css" />
-  <link rel="stylesheet" href="./style.css" />
-  <title>About - Kampung Wisata Batik Kauman Solo</title>
-</head>
+  <body class="mx-auto bg-white">
+    <div class="mx-auto">
+      <!-- Navbar -->
+      <header
+        class="p-4 bg-white fixed w-full top-0 z-50 px-5 lg:px-10 items-center"
+      >
+        <nav class="flex items-center justify-between h-12">
+          <div class="flex gap-3 justify-center items-center">
+            <img src="./assets/Logo.svg" class="w-8" alt="Logo" />
+            <h1 class="font-bold text-sm sm:text-base">
+              Kampung Wisata Batik Kauman Solo
+            </h1>
+          </div>
+          <div>
+            <div
+              class="hidden lg:flex gap-5 justify-center items-center text-sm"
+            >
+              <a href="./index.html" class="">Home</a>
+              <a href="./about.html" class="">About Us</a>
+              <a href="./program.html" class="">Program</a>
+              <a href="./activity.html" class="">Activity</a>
+              <a href="./gallery.html" class="">Gallery</a>
+            </div>
 
-<body class="mx-auto bg-white">
-  <div class="mx-auto">
-    <!-- Navbar -->
-    <header class="p-4 bg-white fixed w-full top-0 z-50 h-16 px-8">
-      <nav class="flex items-center justify-between">
-        <div class="flex gap-3 justify-center items-center">
-          <img src="./assets/Logo.svg" class="w-8" alt="Logo" />
-          <h1 class="font-bold text-sm sm:text-base">Kampung Wisata Batik Kauman Solo</h1>
-        </div>
-        <div class="hidden sm:flex gap-5 text-sm">
-          <a href="./index.html" class="">Home</a>
-          <a href="./about.html" class="">About Us</a>
-          <a href="./program.html" class="">Program</a>
-          <a href="./activity.html" class="">Activity</a>
-          <a href="./galery.html" class="">Gallery</a>
-        </div>
-      </nav>
-    </header>
+            <div class="lg:hidden flex justify-center items-center text-sm">
+              <button id="burger-menu" class="text-gray-500 focus:outline-none">
+                <ion-icon name="menu-outline" class="text-2xl"></ion-icon>
+              </button>
+            </div>
+          </div>
+        </nav>
+      </header>
 
-    <main class="pt-16 ">
-      <div class="flex items-center justify-center">
-        <div class="relative">
-          <div class="absolute inset-0 bg-gradient-to-r from-[#FF860D] to-[#FFAD0E] opacity-50 z-10"></div>
-          <img src="./assets/about/about.png" class="object-cover object-right w-full h-full md:h-2/5" />
+      <main class="pt-16">
+        <div class="flex items-center justify-center">
+          <div class="relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-r from-[#FF860D] to-[#FFAD0E] opacity-50 z-10"
+            ></div>
+            <img
+              src="./assets/about/about.png"
+              class="object-cover object-right w-full h-full md:h-2/5"
+            />
 
-          <!-- Text and Link -->
-          <div class="absolute inset-0 z-20 items-center flex">
-            <div class="flex flex-col md:flex-row gap-10 px-10 justify-center items-center text-white">
-              <div class="text-center">
-                <h1 class="text-4xl font-bold mb-4 text-white">Gunawan Setiawan</h1>
-                <p class="text-lg">Kampung ini menjadi salah satu kampung batik tertua di kota Solo. Sejak tahun
-                  2006 pemerintah mengukuhkan Kauman sebagai kampung batik Hai karena dulu hanya geosfer tertentu
-                  namun kini seluruh kecamatan sudah dilirik oleh warga luar kecamatan Kauman dan luar kota Solo,
-                  begitu sejarahnya singkatnya.</p>
-              </div>
-              <div style="position: relative;">
-                <a href="https://www.youtube.com/watch?v=SuxW5kqR_98" target="_blank" rel="noopener noreferrer"
-                  class="flex-grow">
-                  <img src="./assets/about/Cover Video yt_.png" class="object-cover object-right w-full h-2/5"
-                    alt="About Image" />
-                  <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); pointer-events: none;">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" width="50" height="50" viewBox="0 0 24 24">
-                      <path d="M8 5v14l11-7z" />
-                    </svg>
-                  </div>
-                </a>
+            <!-- Text and Link -->
+            <div class="absolute inset-0 z-20 items-center flex">
+              <div
+                class="flex flex-col md:flex-row gap-10 px-10 justify-center items-center text-white"
+              >
+                <div class="text-center">
+                  <h1 class="text-4xl font-bold mb-4 text-white">
+                    Gunawan Setiawan
+                  </h1>
+                  <p class="text-lg">
+                    Kampung ini menjadi salah satu kampung batik tertua di kota
+                    Solo. Sejak tahun 2006 pemerintah mengukuhkan Kauman sebagai
+                    kampung batik Hai karena dulu hanya geosfer tertentu namun
+                    kini seluruh kecamatan sudah dilirik oleh warga luar
+                    kecamatan Kauman dan luar kota Solo, begitu sejarahnya
+                    singkatnya.
+                  </p>
+                </div>
+                <div style="position: relative">
+                  <a
+                    href="https://www.youtube.com/watch?v=SuxW5kqR_98"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex-grow"
+                  >
+                    <img
+                      src="./assets/about/Cover Video yt_.png"
+                      class="object-cover object-right w-full h-2/5"
+                      alt="About Image"
+                    />
+                    <div
+                      style="
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        pointer-events: none;
+                      "
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="#fff"
+                        width="50"
+                        height="50"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M8 5v14l11-7z" />
+                      </svg>
+                    </div>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="flex gap-8 lg:gap-16 justify-center items-center py-8 px-10">
-        <img src="assets/about/Foto about us tengah.png" class="w-2/5" />
-        <p class="w-2/5 text-center text-base">Kampung Wisata Batik Kauman adalah Kampung batik yang terletak di Kauman,
-          Surakarta. Seperti namanya, Kampung Wisata Batik Kauman tidak hanya menjual batik tulis dan cap,
-          pengunjung akan mendapatkan pengalaman bagaimana proses pembuatan batik dan bisa merasakannya sendiri
-          dengan belajar batik di Kampung Wisata Batik Kauman. Kampung Wisata Batik Kauman juga dilengkapi dengan
-          berbagai kuliner dari tradisional sampai modern, dari Masakan Jawa sampai dengan Cafe-cafe kekinian,
-          adapula snack tradisionalnya juga karena Kampung Wisata Batik Kauman juga pewaris Kampung Baladan yang
-          dahulu terkenal dengan snack khas Solo</p>
-      </div>
-
-      <!-- Gradient -->
-      <div class="w-full h-16 bg-gradient-to-b from-[#ff860d] to-[#EDB059] text-center p-7">
-        <h1 class="font-bold text-xl flex flex-col items-center justify-center h-full">RUTE MENUJU KAMPUNG
-          WISATA BATIK KAUMAN SOLO</h1>
-      </div>
-
-      <div class="pt-10 flex flex-col justify-start items-center">
-        <img src="/assets/about/image 1.png" class="w-1/2" />
-      </div>
-    </main>
-
-  <!-- Footer -->
-  <div class="bg-[#FF7F00] justify-center text-white p-7 px-7 py-8 mt-10">
-    <div class="flex flex-col md:flex-row gap-5">
-      <img src="./assets/Logo.svg" class="w-72" />
-
-      <div class="w-1/2">
-        <!-- Find Us -->
-        <div class="pb-4">
-          <h1 class="text-lg font-bold pb-1">Find Us</h1>
-          <p class="text-sm">Jl. Cakra No. 21, Kauman, Pasar Kliwon, Surakarta</p>
+        <div
+          class="flex gap-8 lg:gap-16 justify-center items-center py-8 px-10"
+        >
+          <img src="assets/about/Foto about us tengah.png" class="w-2/5" />
+          <p class="w-2/5 text-center text-base">
+            Kampung Wisata Batik Kauman adalah Kampung batik yang terletak di
+            Kauman, Surakarta. Seperti namanya, Kampung Wisata Batik Kauman
+            tidak hanya menjual batik tulis dan cap, pengunjung akan mendapatkan
+            pengalaman bagaimana proses pembuatan batik dan bisa merasakannya
+            sendiri dengan belajar batik di Kampung Wisata Batik Kauman. Kampung
+            Wisata Batik Kauman juga dilengkapi dengan berbagai kuliner dari
+            tradisional sampai modern, dari Masakan Jawa sampai dengan Cafe-cafe
+            kekinian, adapula snack tradisionalnya juga karena Kampung Wisata
+            Batik Kauman juga pewaris Kampung Baladan yang dahulu terkenal
+            dengan snack khas Solo
+          </p>
         </div>
 
-        <!-- Contact Us -->
-        <div class="pb-4">
-          <h1 class="text-lg font-bold pb-1">Contact Us</h1>
-          <div class="flex flex-row gap-2">
-            <ion-icon name="logo-whatsapp" class="mt-1"></ion-icon>
-            <p class="text-sm">+62 81 - 5671 - 7154</p>
+        <!-- Gradient -->
+        <div
+          class="w-full h-16 bg-gradient-to-b from-[#ff860d] to-[#EDB059] text-center p-7"
+        >
+          <h1
+            class="font-bold text-xl flex flex-col items-center justify-center h-full"
+          >
+            RUTE MENUJU KAMPUNG WISATA BATIK KAUMAN SOLO
+          </h1>
+        </div>
+
+        <div class="pt-10 flex flex-col justify-start items-center">
+          <img src="/assets/about/image 1.png" class="w-1/2" />
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <div class="bg-[#FF7F00] justify-center text-white p-7 px-7 py-8 mt-10">
+        <div class="flex flex-col md:flex-row gap-5">
+          <img src="./assets/Logo.svg" class="w-72" />
+
+          <div class="w-1/2">
+            <!-- Find Us -->
+            <div class="pb-4">
+              <h1 class="text-lg font-bold pb-1">Find Us</h1>
+              <p class="text-sm">
+                Jl. Cakra No. 21, Kauman, Pasar Kliwon, Surakarta
+              </p>
+            </div>
+
+            <!-- Contact Us -->
+            <div class="pb-4">
+              <h1 class="text-lg font-bold pb-1">Contact Us</h1>
+              <div class="flex flex-row gap-2">
+                <ion-icon name="logo-whatsapp" class="mt-1"></ion-icon>
+                <p class="text-sm">+62 81 - 5671 - 7154</p>
+              </div>
+              <span class="flex gap-2 pt-2">
+                <ion-icon name="mail-outline" class="mt-1"></ion-icon>
+                <p class="text-sm">Batikkaumankampungwisata@gmail.com</p>
+              </span>
+            </div>
+
+            <!-- Social Media -->
+            <div class="pb-4">
+              <h1 class="text-lg font-bold pb-1">Social Media</h1>
+              <div class="flex gap-3">
+                <a
+                  href="https://www.instagram.com/explorekampungbatikkauman/"
+                  class="rounded-full bg-[#FFAD0E] p-2 px-3"
+                >
+                  <ion-icon
+                    name="logo-instagram"
+                    class="text-white scale-150"
+                  ></ion-icon>
+                </a>
+                <a
+                  href="https://www.youtube.com/@kampungwisatabatikkaumanso5321"
+                  class="rounded-full bg-[#FFAD0E] p-2 px-3"
+                >
+                  <ion-icon
+                    name="logo-youtube"
+                    class="text-white scale-105"
+                  ></ion-icon>
+                </a>
+                <a
+                  href="https://google.com/maps/place/Kampung+Batik+Kauman/@-7.572406,110.8232797,17z/data=!4m6!3m5!1s0x2e7a177fb06ec2e5:0x13604084a482227c!8m2!3d-7.5733122!4d110.8258808!16s%2Fg%2F11fr8w_mjx?entry=ttu"
+                  class="rounded-full bg-[#FFAD0E] p-2 px-3"
+                >
+                  <ion-icon
+                    name="location-outline"
+                    class="text-white scale-150"
+                  ></ion-icon>
+                </a>
+              </div>
+            </div>
           </div>
-          <span class="flex gap-2 pt-2">
-            <ion-icon name="mail-outline" class="mt-1"></ion-icon>
-            <p class="text-sm">Batikkaumankampungwisata@gmail.com</p>
+
+          <div class="w-3/4">
+            <h1 class="text-lg font-bold pb-1">About Us</h1>
+            <p>
+              Kampung Wisata Batik Kauman Solo adalah Kampung batik yang
+              terletak di Kauman, Solo. Yang berlokasi dekat dengan Keraton
+              Surakarta dan Masjid Agung. Kampung Wisata Batik Kauman tidak
+              hanya menjual batik tulis dan cap, pengunjung akan mendapatkan
+              pengalaman bagaimana proses pembuatan batik dan bisa merasakannya
+              sendiri dengan belajar batik di Kampung Wisata Batik Kauman Solo.
+              Kampung Wisata Batik Kauman Solo juga dilengkapi dengan berbagai
+              kuliner dari tradisional sampai modern.
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <hr class="my-6 border-white sm:mx-auto lg:my-7" />
+          <span class="flex flex-col text-sm sm:text-center"
+            >© 2023 KAMPUNG WISATA BATIK KAUMAN SOLO
+            <p>sazzahrra</p>
           </span>
         </div>
-
-        <!-- Social Media -->
-        <div class="pb-4">
-          <h1 class="text-lg font-bold pb-1">Social Media</h1>
-          <div class="flex gap-3">
-            <a href="https://www.instagram.com/explorekampungbatikkauman/" class="rounded-full bg-[#FFAD0E] p-2 px-3">
-              <ion-icon name="logo-instagram" class="text-white scale-150"></ion-icon>
-            </a>
-            <a href="https://www.youtube.com/@kampungwisatabatikkaumanso5321" class="rounded-full bg-[#FFAD0E] p-2 px-3">
-              <ion-icon name="logo-youtube" class="text-white scale-105"></ion-icon>
-            </a>
-            <a href="https://google.com/maps/place/Kampung+Batik+Kauman/@-7.572406,110.8232797,17z/data=!4m6!3m5!1s0x2e7a177fb06ec2e5:0x13604084a482227c!8m2!3d-7.5733122!4d110.8258808!16s%2Fg%2F11fr8w_mjx?entry=ttu" class="rounded-full bg-[#FFAD0E] p-2 px-3">
-              <ion-icon name="location-outline" class="text-white scale-150"></ion-icon>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="w-3/4">
-        <h1 class="text-lg font-bold pb-1">About Us</h1>
-        <p>Kampung Wisata Batik Kauman Solo adalah Kampung batik yang terletak di Kauman, Solo. Yang berlokasi dekat dengan Keraton Surakarta dan Masjid Agung. Kampung Wisata Batik Kauman tidak hanya menjual batik tulis dan cap, pengunjung akan mendapatkan pengalaman bagaimana proses pembuatan batik dan bisa merasakannya sendiri dengan belajar batik di Kampung Wisata Batik Kauman Solo. Kampung Wisata Batik Kauman Solo juga dilengkapi dengan berbagai kuliner dari tradisional sampai modern.</p>
       </div>
     </div>
-
-    <div>
-      <hr class="my-6 border-white sm:mx-auto lg:my-7" />
-      <span class="flex flex-col text-sm  sm:text-center ">© 2023 KAMPUNG WISATA BATIK KAUMAN SOLO
-        <p>sazzahrra</p>
-      </span>
-    </div>
-  </div>
-</div>
-</body>
+  </body>
 </html>

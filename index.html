@@ -4,45 +4,59 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
     <link rel="stylesheet" href="./style.css" />
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
     <title>Kampung Wisata Batik Kauman Solo</title>
 </head>
 
 <body class="mx-auto bg-white">
     <div class="mx-auto">
         <!-- Navbar -->
-        <header class="p-4 bg-white fixed w-full top-0 z-50 h-16 px-8">
-            <nav class="flex items-center justify-between">
+       <header class="p-4 bg-white fixed w-full top-0 z-50 px-5 lg:px-10 items-center">
+            <nav class="flex items-center justify-between h-12">
                 <div class="flex gap-3 justify-center items-center">
                     <img src="./assets/Logo.svg" class="w-8" alt="Logo" />
                     <h1 class="font-bold text-sm sm:text-base">
                         Kampung Wisata Batik Kauman Solo
                     </h1>
                 </div>
-                <div class="hidden sm:flex gap-5 text-sm">
+                <div>
+                     <div class="hidden lg:flex gap-5 justify-center items-center text-sm">
                     <a href="./index.html" class="">Home</a>
                     <a href="./about.html" class="">About Us</a>
                     <a href="./program.html" class="">Program</a>
                     <a href="./activity.html" class="">Activity</a>
                     <a href="./gallery.html" class="">Gallery</a>
                 </div>
+
+                <div class="lg:hidden flex justify-center items-center text-sm">
+                    <button id="burger-menu" class="text-gray-500 focus:outline-none">
+                        <ion-icon name="menu-outline" class="text-2xl"></ion-icon>
+                    </button>
+                </div>
+                </div>
+               
             </nav>
         </header>
 
         <main class="pt-16">
-            <div class="flex flex-col items-center">
-                <img src="./assets/home/Kampung Home.svg" class="w-full" alt="Kampung Home Image" />
-                <div class="w-full h-48 bg-gradient-to-b from-[#ff860d] to-[#EDB059] text-center p-7 px-4 sm:px-32">
+            <div class="flex flex-col gap-0 items-center w-full">
+                <img src="./assets/home/Kampung Home.svg" class="h-3/4 w-full" alt="Kampung Home Image" />
+                <div class="w-full h-full bg-gradient-to-b from-[#ff860d] to-[#EDB059] text-center p-7 px-4 sm:px-32">
                     <h1 class="font-bold text-2xl sm:text-3xl lg:text-4xl pb-1">
                         Kauman, come and fall in love with Batik
                     </h1>
-
-                    <p class="text-base sm:text-lg text-center">
+                    <p class="text-base sm:text-lg text-center ">
                         Kampung Wisata Batik Kauman Solo adalah Kampung batik yang terletak
                         di Kauman, Solo. Yang berlokasi dekat dengan Keraton Surakarta dan
                         Masjid Agung. Kampung Wisata Batik Kauman tidak hanya menjual batik
@@ -54,12 +68,14 @@
                     </p>
                 </div>
             </div>
+
+
  
         <!-- LIST -->
-        <div class="flex flex-col sm:flex-row gap-20 pt-10 justify-center items-center px-32">
+        <div class="flex flex-col lg:flex-row gap-20 pt-10 justify-center items-center px-10 lg:px-32">
 
             <!-- left content -->
-            <div class="w-1/2">
+            <div class="w-full lg:w-1/2">
                 <h1 class="font-semibold text-blue-400 text-xl lg:text-3xl"> Kabar Kampung </h1>
                <span class="border-b-4 border-[#09E1C0] block w-10  mt-8 mb-6 "></span>
 
@@ -88,7 +104,7 @@
           </div>
 
           <!-- right content -->
-          <div class="flex flex-col w-1/2">
+          <div class="flex flex-col w-full lg:w-1/2">
             <div class="flex flex-row gap-4 pb-5 items-start">
                 <img src="./assets/home/Link 1.png" class="w-10 align-self-start pt-1" alt="Link 1 Image" />
                 <div>
@@ -160,18 +176,17 @@
         <div class="w-full h-20 bg-gradient-to-b from-[#ff860d] to-[#EDB059] text-center p-7 py-10 mt-10"></div>
 
         <!-- batik -->
-        <div class="pt-10 p-4 px-20">
-            <div class="flex flex-row gap-20">
-                <div class="flex flex-row gap-5 w-3/4">
-                    <img src="./assets/home/DSCF5202 1.png" class="h-3/4" />
+        <div class="pt-10 p-4 sm:px-8 md:px-12 lg:px-20">
+            <div class="flex flex-col gap-8 sm:flex-row">
+                <div class="flex flex-col sm:flex-row gap-5 w-full sm:w-3/4">
+                    <img src="./assets/home/DSCF5202 1.png" class="w-full h-3/4 sm:w-1/2 md:h-full" />
                     <div class="flex flex-col">
                         <h1 class="font-semibold pb-1">Batik Tulis</h1>
                         <p class="text-center text-sm">Batik tulis atau batik tradisional merupakan jenis batik yang proses pembuatannya dilakukan secara manual menggunakan tangan. Cara membuatnya yaitu menerakan lilin memakai alat bantu canting pada kain yang sudah ada coraknya.</p>
-                
                     </div>
                 </div>
-                 <div class="flex flex-row gap-5 w-3/4">
-                    <img src="./assets/home/DSCF7285_edited 1.png" class="w-1/2 md:h-3/4" />
+                <div class="flex flex-col sm:flex-row gap-5 w-full sm:w-3/4">
+                    <img src="./assets/home/DSCF7285_edited 1.png" class="w-full h-3/4 sm:w-1/2 md:h-full" />
                     <div class="flex flex-col">
                         <h1 class="font-semibold pb-1">Batik CAP</h1>
                         <p class="text-center text-sm">Batik cap ini dibuat menggunakan cap atau stempel bermotif batik. Biasanya, cap ini terbuat dari tembaga dan kerap dijadikan sebagai pengganti fungsi canting sehingga dapat mempercepat proses pembuatan.</p>
